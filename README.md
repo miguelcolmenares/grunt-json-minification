@@ -34,17 +34,17 @@ json_minification: {
 }
 ```
 
-#### Minify all contents of a release directory and add a `.min.css` extension
+#### Minify all contents of a release directory
 
 ```json
 json_minification: {
   target: {
     files: [{
       expand: true,
-      cwd: 'release/css',
-      src: ['*.css', '!*.min.css'],
-      dest: 'release/css',
-      ext: '.min.css'
+      cwd: 'release/json',
+      src: ['*.json', '!*.min.json'],
+      dest: 'release/json',
+      ext: '.min.jsons'
     }]
   }
 }
