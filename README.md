@@ -48,6 +48,7 @@ json_minification: {
     }]
   }
 }
+```
 
 
 ## Contributing
