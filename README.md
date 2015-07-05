@@ -24,7 +24,7 @@ _Run this task with the `grunt jsonminification` command._
 
 #### Combine two files into one output file
 
-```json
+```js
 json_minification: {
   target: {
     files: {
@@ -36,7 +36,7 @@ json_minification: {
 
 #### Minify all contents of a release directory
 
-```json
+```js
 json_minification: {
   target: {
     files: [{
