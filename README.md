@@ -55,4 +55,4 @@ json_minification: {
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
- * 2015-05-09   v0.1.0  Initial commit
+ * 2015-05-09   v0.1.0   Initial commit
