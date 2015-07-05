@@ -18,7 +18,7 @@ grunt.loadNpmTasks('grunt-json-minification');
 ```
 
 ## json_minification task
-_Run this task with the `grunt jsonminification` command._
+_Run this task with the `grunt json_minification` command._
 
 ### Usage Examples
 
