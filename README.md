@@ -22,18 +22,6 @@ _Run this task with the `grunt jsonminification` command._
 
 ### Usage Examples
 
-#### Combine two files into one output file
-
-```js
-json_minification: {
-  target: {
-    files: {
-      'output.json': ['foo.json', 'bar.json']
-    }
-  }
-}
-```
-
 #### Minify all contents of a release directory
 
 ```js
@@ -44,7 +32,7 @@ json_minification: {
       cwd: 'release/json',
       src: ['*.json', '!*.min.json'],
       dest: 'release/json',
-      ext: '.min.jsons'
+      ext: '.min.json'
     }]
   }
 }
