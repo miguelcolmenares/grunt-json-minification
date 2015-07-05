@@ -1,0 +1,47 @@
+{
+  "name": "grunt-json-minification",
+  "description": "Minify JSON files in grunt.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/redpancho/grunt-json-minification",
+  "author": {
+    "name": "redpancho",
+    "email": "redpancho@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/redpancho/grunt-json-minification.git"
+  },
+  "bugs": {
+    "url": "https://github.com/redpancho/grunt-json-minification/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/redpancho/grunt-json-minification/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.9.2",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt": "~0.4.5"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.5"
+  },
+  "keywords": [
+    "gruntplugin"
+  ],
+  "dependencies": {
+    "chalk": "^1.1.0",
+    "clean-css": "^3.3.5",
+    "jsonminify": "^0.2.3",
+    "maxmin": "^1.1.0"
+  }
+}
