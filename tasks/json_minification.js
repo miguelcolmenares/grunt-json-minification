@@ -44,6 +44,7 @@ module.exports = function (grunt) {
             options.relativeTo = path.dirname(availableFiles[0]);
 
             try {
+                JSON.parse(grunt.file.read(availableFiles));
                 compiled = JSON.minify(grunt.file.read(availableFiles));
             } catch (err) {
                 grunt.log.error(err);
