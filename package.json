@@ -1,7 +1,7 @@
 {
   "name": "grunt-json-minification",
   "description": "Minify JSON files in grunt.",
-  "version": "0.1.1",
+  "version": "0.2.2",
   "homepage": "https://github.com/redpancho/grunt-json-minification",
   "author": {
     "name": "redpancho",
