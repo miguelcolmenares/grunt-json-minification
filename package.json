@@ -39,6 +39,6 @@
     "chalk": "^4.1.1",
     "clean-css": "^5.1.2",
     "jsonminify": "^0.4.1",
-    "maxmin": "^4.0.0"
+    "maxmin": "^3.0.0"
   }
 }
