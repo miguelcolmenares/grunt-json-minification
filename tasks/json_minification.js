@@ -8,37 +8,35 @@
 
 'use strict';
 
-var path = require('path');
-var util = require('util');
-var maxmin = require('maxmin');
-var jsonminify = require("jsonminify");
+const path = require('path');
+const util = require('util');
+const maxmin = require('maxmin');
+const jsonminify = require("jsonminify");
 
-module.exports = function (grunt) {
-    var getAvailableFiles = function (filesArray) {
-        return filesArray.filter(function (filepath) {
-            if (!grunt.file.exists(filepath)) {
-                grunt.log.warn('Source file ' + filepath + ' not found');
-                return false;
-            }
-            return true;
-        });
-    };
+module.exports = grunt => {
+    const getAvailableFiles = filesArray => filesArray.filter( filepath => {
+        if (!grunt.file.exists(filepath)) {
+            grunt.log.warn('Source file ' + filepath + ' not found');
+            return false;
+        }
+        return true;
+    });
 
     grunt.registerMultiTask('json_minification', 'Minify JSON', function () {
-        var created = {
+        const created = {
             maps: 0,
             files: 0
         };
-        var size = {
+        const size = {
             before: 0,
             after: 0
         };
 
-        this.files.forEach(function (file) {
-            var options = this.options({});
+        this.files.forEach(file => {
+            const options = this.options({});
 
-            var availableFiles = getAvailableFiles(file.src);
-            var compiled = '';
+            const availableFiles = getAvailableFiles(file.src);
+            let compiled = '';
 
             options.target = file.dest;
             options.relativeTo = path.dirname(availableFiles[0]);
@@ -53,9 +51,7 @@ module.exports = function (grunt) {
 
             var compiledJSONString = compiled;
 
-            var unCompiledJSONString = availableFiles.map(function (file) {
-                return grunt.file.read(file);
-            }).join('');
+            var unCompiledJSONString = availableFiles.map(file => grunt.file.read(file)).join('');
 
             size.before += unCompiledJSONString.length;
 
