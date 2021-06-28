@@ -8,10 +8,10 @@
 
 'use strict';
 
-const path = require('path');
-const util = require('util');
-const maxmin = require('maxmin');
-const jsonminify = require("jsonminify");
+var path = require('path');
+var util = require('util');
+var maxmin = require('maxmin');
+var jsonminify = require("jsonminify");
 
 module.exports = function (grunt) {
     var getAvailableFiles = function (filesArray) {
