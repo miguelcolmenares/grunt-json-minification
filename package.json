@@ -30,7 +30,7 @@
     "grunt": "^1.4.0",
     "grunt-contrib-clean": "^2.0.0",
     "grunt-contrib-jshint": "^3.0.0",
-    "grunt-contrib-nodeunit": "^3.0.0"
+    "grunt-contrib-nodeunit": "^4.0.0"
   },
   "keywords": [
     "gruntplugin"
