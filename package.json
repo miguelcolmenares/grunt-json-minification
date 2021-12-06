@@ -36,7 +36,7 @@
     "gruntplugin"
   ],
   "dependencies": {
-    "chalk": "^4.1.1",
+    "chalk": "^5.0.0",
     "clean-css": "^5.1.2",
     "jsonminify": "^0.4.1",
     "maxmin": "^3.0.0"
