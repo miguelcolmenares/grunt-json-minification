@@ -49,9 +49,9 @@ module.exports = grunt => {
                 grunt.warn('JSON minification failed at ' + availableFiles + '.');
             }
 
-            var compiledJSONString = compiled;
+            const compiledJSONString = compiled;
 
-            var unCompiledJSONString = availableFiles.map(file => grunt.file.read(file)).join('');
+            const unCompiledJSONString = availableFiles.map(file => grunt.file.read(file)).join('');
 
             size.before += unCompiledJSONString.length;
 
