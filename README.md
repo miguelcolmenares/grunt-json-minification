@@ -1,7 +1,7 @@
 # grunt-json-minification v0.2.2
 
 [![Version](https://img.shields.io/github/package-json/v/miguelcolmenares/grunt-json-minification.svg)]()
-[![CodeQL](https://github.com/miguelcolmenares/grunt-json-minification/workflows/CodeQL/badge.svg)](https://github.com/miguelcolmenares/grunt-json-minification/actions/workflows/codeql-analysis.yml)
+[![CodeQL](https://github.com/miguelcolmenares/grunt-json-minification/workflows/CodeQL/badge.svg)](https://github.com/miguelcolmenares/grunt-json-minification/actions/workflows/codeql.yml)
 [![Grunt](https://img.shields.io/github/package-json/dependency-version/miguelcolmenares/grunt-json-minification/dev/grunt/master.svg)]()
 [![Node Engine](http://img.shields.io/badge/node-16.x-brightgreen.svg)]()
 
