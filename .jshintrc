@@ -1,4 +1,6 @@
 {
+  "esversion": 6,
+  "node": true,
   "curly": true,
   "eqeqeq": true,
   "immed": true,
@@ -9,5 +11,5 @@
   "undef": true,
   "boss": true,
   "eqnull": true,
-  "node": true
+  "strict": false
 }
