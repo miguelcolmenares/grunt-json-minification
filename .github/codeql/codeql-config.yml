@@ -15,4 +15,4 @@ paths-ignore:
 paths:
   - tasks
   - Gruntfile.js
-  - test/*_test.js
+  - test/*_test.js# CodeQL force refresh Tue Oct 28 23:20:29 -05 2025
