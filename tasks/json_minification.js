@@ -9,7 +9,6 @@
 'use strict';
 
 const path = require('path');
-const util = require('util');
 const maxmin = require('maxmin');
 const jsonminify = require("jsonminify");
 
@@ -43,7 +42,7 @@ module.exports = grunt => {
 
             try {
                 JSON.parse(grunt.file.read(availableFiles));
-                compiled = JSON.minify(grunt.file.read(availableFiles));
+                compiled = jsonminify(grunt.file.read(availableFiles));
             } catch (err) {
                 grunt.log.error(err);
                 grunt.warn('JSON minification failed at ' + availableFiles + '.');
