@@ -71,6 +71,15 @@ files: [{
 - **Linting**: `grunt-contrib-jshint` with strict configuration
 - **Build**: `grunt-contrib-clean` for tmp directory management
 
+## GitHub CLI Usage
+- **ALWAYS pipe GitHub CLI commands** through `cat` to prevent pager issues and hanging
+- **Correct usage**: `gh run list --limit 10 | cat` or `PAGER=cat gh run list --limit 10`
+- **Avoid**: Direct `gh` commands without pager handling (they can hang or be interrupted)
+- **Examples**:
+  - `gh run list | cat` - List workflow runs
+  - `gh pr list | cat` - List pull requests
+  - `PAGER=cat gh run view <run-id>` - View specific run details
+
 ## Configuration Notes
 - Node.js 16+ required (specified in package.json engines)
 - Uses strict mode throughout codebase
