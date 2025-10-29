@@ -42,5 +42,10 @@
     "clean-css": "^5.1.2",
     "jsonminify": "^0.4.1",
     "maxmin": "^3.0.0"
+  },
+  "overrides": {
+    "@babel/traverse": ">=7.23.2",
+    "react-devtools-core": ">=4.28.4",
+    "ws": ">=7.5.10"
   }
 }
