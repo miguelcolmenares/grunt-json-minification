@@ -2,14 +2,8 @@
 
 const fs = require('fs');
 const path = require('path');
-const { execSync } = require('child_process');
 
 describe('grunt-json-minification', () => {
-  beforeAll(() => {
-    // Clean and build before running tests
-    execSync('npx grunt clean json_minification', { stdio: 'inherit' });
-  });
-
   describe('default_options', () => {
     it('should minify JSON file correctly', () => {
       const actualPath = path.join(__dirname, '..', 'tmp', 'test.json');
