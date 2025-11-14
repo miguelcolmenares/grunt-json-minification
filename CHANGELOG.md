@@ -14,6 +14,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - 📦 Updated npm requirement to >=8.0.0
 - 🔄 Updated CI/CD workflows to test against Node.js 18, 20, and 22
 - ✅ Enhanced compatibility workflow with multi-Node version matrix testing
+- ⬆️ Updated dependencies to latest versions:
+  - chalk: 5.0.0 → 5.6.2
+  - clean-css: 5.1.2 → 5.3.3
+  - jsonminify: 0.4.1 → 0.4.2
+  - grunt-cli: 1.4.3 → 1.5.0
+  - grunt-contrib-clean: 2.0.0 → 2.0.1
+  - grunt-contrib-jshint: 3.0.0 → 3.2.0
+  - minimist: 1.2.6 → 1.2.8
 
 ### Notes
 
