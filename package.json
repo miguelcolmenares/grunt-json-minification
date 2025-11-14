@@ -1,7 +1,7 @@
 {
   "name": "grunt-json-minification",
   "description": "A modern, maintained fork of grunt-json-minification plugin for minifying JSON files with comprehensive size reporting and security updates.",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "homepage": "https://github.com/miguelcolmenares/grunt-json-minification",
   "author": {
     "name": "redpancho",
