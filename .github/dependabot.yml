@@ -9,3 +9,8 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "weekly"
+    ignore:
+      # maxmin 4.x is ESM-only and incompatible with our CommonJS plugin
+      # Keep maxmin at 3.x until we migrate to ESM
+      - dependency-name: "maxmin"
+        update-types: ["version-update:semver-major"]
