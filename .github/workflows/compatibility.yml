@@ -10,22 +10,23 @@ on:
 
 jobs:
   compatibility:
-    name: Grunt ${{ matrix.grunt-version }} Compatibility
+    name: Grunt ${{ matrix.grunt-version }} / Node ${{ matrix.node-version }} Compatibility
     runs-on: ubuntu-latest
     
     strategy:
       fail-fast: false
       matrix:
         grunt-version: ['1.4.0', '1.5.3', '1.6.1']
+        node-version: ['18.x', '20.x', '22.x']
         
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
       
-    - name: Setup Node.js LTS
+    - name: Setup Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
       with:
-        node-version: '20.x'
+        node-version: ${{ matrix.node-version }}
         cache: 'npm'
         
     - name: Install base dependencies
@@ -45,11 +46,11 @@ jobs:
     - name: Generate compatibility badge data
       if: success()
       run: |
-        echo "✅ Compatible with Grunt ${{ matrix.grunt-version }}" >> compatibility-results.txt
+        echo "✅ Compatible with Grunt ${{ matrix.grunt-version }} on Node ${{ matrix.node-version }}" >> compatibility-results.txt
         
     - name: Upload results
       if: always()
       uses: actions/upload-artifact@v4
       with:
-        name: compatibility-grunt-${{ matrix.grunt-version }}
+        name: compatibility-grunt-${{ matrix.grunt-version }}-node-${{ matrix.node-version }}
         path: compatibility-results.txt

@@ -5,6 +5,22 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.0] - 2024-11-14
+
+### Changed
+
+- ⬆️ **BREAKING**: Dropped Node.js 16 support - now requires Node.js >=18.14.0
+- 🧪 Updated Jest from v29.7.0 to v30.2.0 for latest testing features
+- 📦 Updated npm requirement to >=8.0.0
+- 🔄 Updated CI/CD workflows to test against Node.js 18, 20, and 22
+- ✅ Enhanced compatibility workflow with multi-Node version matrix testing
+
+### Notes
+
+- This is a breaking change due to Node.js version requirement
+- Users on Node.js 16 should use v0.3.1 (last compatible version)
+- All tests passing on Node.js 18, 20, and 22
+
 ## [0.3.1] - 2024-11-14
 
 ### Changed

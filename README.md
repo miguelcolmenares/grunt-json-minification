@@ -5,7 +5,7 @@
 [![Test](https://github.com/miguelcolmenares/grunt-json-minification/actions/workflows/test.yml/badge.svg)](https://github.com/miguelcolmenares/grunt-json-minification/actions/workflows/test.yml)
 [![Compatibility](https://github.com/miguelcolmenares/grunt-json-minification/actions/workflows/compatibility.yml/badge.svg)](https://github.com/miguelcolmenares/grunt-json-minification/actions/workflows/compatibility.yml)
 [![CodeQL](https://github.com/miguelcolmenares/grunt-json-minification/actions/workflows/codeql.yml/badge.svg)](https://github.com/miguelcolmenares/grunt-json-minification/actions/workflows/codeql.yml)
-[![Node.js Engine](https://img.shields.io/badge/node-%3E%3D16-brightgreen.svg)](https://nodejs.org/)
+[![Node.js Engine](https://img.shields.io/badge/node-%3E%3D18.14-brightgreen.svg)](https://nodejs.org/)
 [![Grunt Compatibility](https://img.shields.io/badge/grunt-1.4.0%20%7C%201.5.3%20%7C%201.6.1-orange.svg)](https://gruntjs.com/)
 [![License](https://img.shields.io/github/license/miguelcolmenares/grunt-json-minification.svg)](LICENSE)
 
@@ -44,11 +44,11 @@ npm install miguelcolmenares/grunt-json-minification --save-dev
 
 ## 🚀 Getting Started
 
-This plugin requires **Grunt \`>=1.4.0\`** and **Node.js \`>=16\`**.
+This plugin requires **Grunt `>=1.4.0`** and **Node.js `>=18.14`**.
 
 **Tested and compatible with:**
 - ✅ Grunt 1.4.0 - 1.6.1
-- ✅ Node.js 16.x, 18.x, 20.x, 22.x
+- ✅ Node.js 18.x, 20.x, 22.x
 - ✅ Windows, macOS, Linux
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide. Once you're familiar with that process, enable this plugin in your Gruntfile:
