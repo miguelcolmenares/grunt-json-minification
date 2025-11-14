@@ -77,5 +77,8 @@
     ],
     "collectCoverage": false,
     "verbose": true
+  },
+  "overrides": {
+    "js-yaml": "^4.1.1"
   }
 }

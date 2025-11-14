@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.4.0] - 2024-11-14
 
+### Security
+
+- 🔒 Fixed CVE-2025-64718: js-yaml prototype pollution vulnerability
+  - Added npm override to force js-yaml@4.1.1+ (fixes moderate severity issue)
+
 ### Changed
 
 - ⬆️ **BREAKING**: Dropped Node.js 16 support - now requires Node.js >=18.14.0
